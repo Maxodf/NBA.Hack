@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+        <title>NBA.hack - Home</title>
+        <meta charset="UTF-8"> 
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page.html">Actus</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html" id="navbarDropdown">Classement</a> 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+                 <h1> 
+                    <strong class="titre"> NBA.hack </strong>
+                 </h1>
+
+
+                 <h2 class="actus"><a class="link btn-lg btn-success bg-transparent" href="page.html">@ctus</a></h2>
+                 <h2 class="classement"><a class="link btn-lg btn-success bg-transparent" href="about.html">cl@ssement</a></h2>
+
+             </div>
+        </div>
+    </div>
+
+
+
+  <canvas id="c"></canvas>
+        
+  <script>
+  var c = document.getElementById("c");
+  var ctx = c.getContext("2d");
+
+  c.height = window.innerHeight;
+  c.width = window.innerWidth;
+  var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+  matrix = matrix.split("");
+
+  var font_size = 10;
+  var columns = c.width/font_size; 
+  var drops = [];
+
+  for(var x = 0; x < columns; x++)
+      drops[x] = 1; 
+
+
+  function draw()
+  {
+
+      ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+      ctx.fillRect(0, 0, c.width, c.height);
+
+      ctx.fillStyle = "#0F0"; 
+      ctx.font = font_size + "px arial";
+
+      for(var i = 0; i < drops.length; i++)
+      {
+
+          var text = matrix[Math.floor(Math.random()*matrix.length)];
+
+          ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+
+          if(drops[i]*font_size > c.height && Math.random() > 0.975)
+              drops[i] = 0;
+
+
+          drops[i]++;
+      }
+  }
+
+  setInterval(draw, 35);
+
+  
+  </script>
+
+
+
+
+
+
+
+
+  
+  <footer>
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <p class="font-italic text-muted"> ®<strong><i>NBA.hack</i></strong> <br> <br>Le hack de l'actualité NBA en direct : <br> News, rumeurs, transferts, interviews, résultats, classements et vidéos</p>
+
+        <br> <br> <br> <br>
+
+        <p> © Copyright 2021 | <i>NBA.hack</i> </p>
+      
+
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4"></h6>
+        <ul class="list-unstyled mb-0">
+        </ul>
+         <!-- <img class="logo" src="img/favicon.png" alt=""> -->
+      </div>
+
+
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Pages</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="Index.html" class="text-muted">Home</a></li>
+          <li class="mb-2"><a href="page.html" class="text-muted">Actus en direct</a></li>
+          <li class="mb-2"><a href="about.html" class="text-muted">Classement Est - Ouest</a></li>
+        </ul>
+
+      <a target="_blank" href="https://www.instagram.com/nba/?hl=fr"> <img class="reseaux" src="img/insta.png" alt="" title="Instagram"> </a> 
+      <a target="_blank" href="https://twitter.com/nba"><img class="reseaux" src="img/twitter.png" alt="" title="Twitter"> </a> 
+      <a target="_blank" href="https://fr-fr.facebook.com/nba"><img class="reseaux" src="img/fb.png" alt="" title="Facebook"> </a> 
+      <a target="_blank" href="https://www.snapchat.com/add/nba"><img class="reseaux" src="img/snap.png" alt="" title="Snapchat"> </a> 
+
+      </div>
+
+
+
+      <div class="col-lg-4 col-md-6 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Contact</h6>
+        <div class="p-1 rounded border">
+          <div class="input-group">
+            <input type="email" placeholder="@entre ton email" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+          </div>
+        </div>
+
+
+
+        <label for="exampleFormControlTextarea1" class="form-label1">MESSAGE</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Envoyer
+        </button>
+        
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre message a bien été envoyé.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      
+    </div>
+  </div>
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
