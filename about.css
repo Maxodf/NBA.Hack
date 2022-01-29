@@ -1,0 +1,517 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(img/back.png);
+    background-size: cover;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    font-size: 30px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-family: 'VT323', monospace;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.nav-link{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-link:hover{
+        text-shadow: 0 0 5px #00ff15; 
+        color: white;
+}
+
+
+
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Aldrich', sans-serif;
+    font-size: clamp(60px, 7vw, 150px);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+
+h2{
+    text-align: center;
+    color: magenta;
+    font-size: clamp(10px, 2vw, 40px);
+    margin-bottom: 30px;
+}
+
+ol{
+    text-align: center;
+    color: white;
+    font-size: clamp(10px, 1.5vw, 40px);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.ol2{
+    border-left: solid 5px #ffffff;
+}
+
+li{
+    margin-bottom: 20px;
+    color : white;
+    list-style-position: inside;
+}
+
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+.Milwaukee a:hover{
+    background: linear-gradient(to right, rgb(0, 71, 27), transparent);
+    color: rgb(240, 235, 210);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+.Boston a:hover{
+    background: linear-gradient(to right, rgb(0,122,51), transparent);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Philadelphia a:hover{
+    background: linear-gradient(to right, rgb(0,107,182), transparent);
+    color: rgb(237,23,76);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Indiana a:hover{
+    background: linear-gradient(to right, rgb(253,187,48), transparent);
+    color: rgb(0,45,98);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Brooklyn a:hover{
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Orlando a:hover{
+    background: linear-gradient(to right, rgb(0,125,197), transparent);
+    color: rgb(196,206,211);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Atlanta a:hover{
+    background: linear-gradient(to right, rgb(225,68,52), transparent);
+    color: rgb(196,214,0);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Miami a:hover{
+    background: linear-gradient(to right, rgb(152,0,46), transparent);
+    color: rgb(249,160,27);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Detroit a:hover{
+    background: linear-gradient(to right, rgb(200,16,46), transparent);
+    color: rgb(29,66,138);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Cleveland a:hover{
+    background: linear-gradient(to right, rgb(134,0,56), transparent);
+    color: rgb(253,187,48);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.NY a:hover{
+    background: linear-gradient(to right, rgb(245,132,38), transparent);
+    color: rgb(0,107,182);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Chicago a:hover{
+    background: linear-gradient(to right, rgb(206,17,65), transparent);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Charlotte a:hover{
+    background: linear-gradient(to right, rgb(29,17,96), transparent);
+    color: rgb(0,120,140);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Toronto a:hover{
+    background: linear-gradient(to right, rgb(206,17,65), transparent);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Washington a:hover{
+    background: linear-gradient(to right, rgb(0,43,92), transparent);
+    color: rgb(227,24,55);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Utah a:hover{
+    background: linear-gradient(to right, rgb(0,43,92), transparent);
+    color: rgb(0,71,27);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Phoenix a:hover{
+    background: linear-gradient(to right, rgb(29,17,96), transparent);
+    color: rgb(229,95,32);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.LAC a:hover{
+    background: linear-gradient(to right, rgb(200,16,46), transparent);
+    color: rgb(29,66,148);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Denver a:hover{
+    background: linear-gradient(to right, rgb(13,34,64), transparent);
+    color: rgb(255,198,39);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.LAL a:hover{
+    background: linear-gradient(to right, rgb(85,37,130), transparent);
+    color: rgb(253,185,39);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Portland a:hover{
+    background: linear-gradient(to right, rgb(224,58,62), transparent);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Dallas a:hover{
+    background: linear-gradient(to right, rgb(0,83,188), transparent);
+    color: rgb(187,196,202);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Memphis a:hover{
+    background: linear-gradient(to right, rgb(93,118,169), transparent);
+    color: rgb(18,23,63);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.GoldenState a:hover{
+    background: linear-gradient(to right, rgb(29,66,138), transparent);
+    color: rgb(255,199,44);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.SanAntonio a:hover{
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    color: rgb(196,206,211);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Sacramento a:hover{
+    background: linear-gradient(to right, rgb(91,43,130), transparent);
+    color: rgb(99,113,122);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Oklahoma a:hover{
+    background: linear-gradient(to right, rgb(0,125,195), transparent);
+    color: rgb(239,59,36);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Minnesota a:hover{
+    background: linear-gradient(to right, rgb(12,35,64), transparent);
+    color: rgb(120,190,32);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Houston a:hover{
+    background: linear-gradient(to right, rgb(206,17,65), transparent);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.NewOrleans a:hover{
+    background: linear-gradient(to right, rgb(0,22,65), transparent);
+    color: rgb(225,58,62);
+    font-weight: 900;
+    font-size : clamp(15px, 1.8vw, 40px);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+.playoff{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.lorem1{
+    border-top: solid 3px #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    color: white;
+    background-color: black;
+}
+
+.PLAY{
+    color: #17408B;
+}
+
+.OFFS{
+    color: #C9082A;
+}
+
+.lorem2{
+    border-top: solid 3px #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 50px;
+    color: white;
+    margin-bottom: 100px;
+    background: #000000;
+}
+
+
+.logos{
+    width: 50px;
+}
+
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+
+
+
+footer{
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color: black;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.p-1{
+    margin-right: 30px;
+}
+
+.btn{
+    color: #000000;
+    background-color: #ffffff;
+    border-color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: #00ff00;
+    color: rgb(255, 255, 255);
+    border-color: black;
+
+}
+
+.btn:focus{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+
+.reseaux{
+    width: clamp(10px, 2.5vw, 50px);
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.reseaux:hover{
+    filter: drop-shadow(0 0 1rem #00ff00);
+}
+
+
+
+p{
+    margin-left: 20px;
+}
+
+
+.form-label{
+    color: #333;
+}
+
+.form-label1{
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+#exampleFormControlTextarea1{
+    width: 95%;
+}
+
+
+#exampleModalLabel{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+@keyframes binnary{
+    0%{
+        background-position: 0% 50%;
+    }
+    30%{
+        background-position: 50% 60%;
+    }
+    100%{
+        background-position: 60% 70%;
+    }
+}
